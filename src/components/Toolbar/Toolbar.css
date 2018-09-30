@@ -1,0 +1,76 @@
+.toolbar {
+    background: transparent;
+    width: 100%;
+    height: 80px;
+}
+
+.toolbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.toolbar-logo {
+    width: 250px;
+    margin-left: 1rem;
+}
+
+.toolbar-logo img {
+    width: 100%;
+}
+
+.toolbar-small-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.toolbar-small-logo img {
+    display: inline-block;
+    width: 30px;
+    /* Add negative margin based on SideDrawerButton width and left margin, to center the logo */
+    margin-left: calc(-28px - .8rem);
+}
+
+.toolbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar-links li {
+    padding: 0 0.5rem;
+}
+
+.toolbar-links a {
+    text-decoration: none;
+    color: blue;
+}
+
+.toolbar-links a:hover,
+.toolbar-links a:hover {
+    color: orange;
+}
+
+@media (max-width: 899px) {
+    .toolbar-links {
+        display: none;
+    }
+    .toolbar-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toolbar-nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .toolbar-small-logo img {
+        display: none;
+    }
+}

@@ -1,5 +1,22 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 100%;
+}
+
+.slide-open {
+  position: fixed;
+  width: calc(100% + 260px);
+  margin-left: 260px;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.slide-close {
+  transition: 0.3s ease-out;
 }

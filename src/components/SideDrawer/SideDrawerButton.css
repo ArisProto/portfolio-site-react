@@ -1,0 +1,29 @@
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: .8rem;
+    box-sizing: border-box;
+}
+
+.menu-button:focus {
+    outline: none;
+}
+
+.button-line {
+    width: 28px;
+    height: 3px;
+    background: #000;
+}
+
+@media (min-width: 900px) {
+    .menu-button {
+        display: none;
+    }
+}

@@ -1,21 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Toolbar from './components/Toolbar/Toolbar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+
+library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen );
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    state = {
+        sideDrawerOpen: false
+    };
+
+    sideDrawerClickHandler = () => {
+        this.setState((prevState) => {
+            return {sideDrawerOpen: !prevState.sideDrawerOpen}
+        });  
+    };
+    
+    backdropClickHandler = () => {
+        this.setState({sideDrawerOpen: false});
+    };
+
+    render() {
+        let backdrop;
+
+        if(this.state.sideDrawerOpen) {
+            backdrop = <Backdrop click={this.backdropClickHandler}/>
+            document.querySelector('body').className = 'slide-open';
+        } else {
+            document.querySelector('body').className = 'slide-close';
+        };
+
+        return (
+            <div style={{height: '100%'}}>
+                <Toolbar drawerClickHandler={this.sideDrawerClickHandler}/>
+                <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  {backdrop}
+                <p style={{textAlign: 'center'}}>*</p>
+                <p style={{textAlign: 'center'}}>*</p>
+                <p style={{textAlign: 'center'}}>*</p>
+            </div>
+        );
+    }
 }
 
 export default App;
