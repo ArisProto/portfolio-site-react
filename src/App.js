@@ -3,6 +3,7 @@ import './App.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import Showcase from './components/Showcase/Showcase';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,7 +37,9 @@ class App extends Component {
         return (
             <div style={{height: '100%'}}>
                 <Toolbar drawerClickHandler={this.sideDrawerClickHandler}/>
-                <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  {backdrop}
+                <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
+                {backdrop}
+                <Showcase />
                 <p style={{textAlign: 'center'}}>*</p>
                 <p style={{textAlign: 'center'}}>*</p>
                 <p style={{textAlign: 'center'}}>*</p>
