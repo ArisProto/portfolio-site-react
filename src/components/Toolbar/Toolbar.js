@@ -7,7 +7,7 @@ import '../SideDrawer/SideDrawerButton';
 import SideDrawerButton from '../SideDrawer/SideDrawerButton';
 
 const toolbar = props => (
-    <header className="toolbar">
+    <header className="toolbar" style={{background: props.bgColor ? props.bgColor : null}}>
         <nav className="toolbar-nav">
             <div>
                 <SideDrawerButton click={props.drawerClickHandler}/>
