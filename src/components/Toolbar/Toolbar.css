@@ -46,12 +46,12 @@
 
 .toolbar-links a {
     text-decoration: none;
-    color: blue;
+    color: #e57254;
 }
 
 .toolbar-links a:hover,
 .toolbar-links a:hover {
-    color: orange;
+    color: grey;
 }
 
 @media (max-width: 899px) {

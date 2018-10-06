@@ -6,12 +6,10 @@ const showcase = props => (
         <div className="showcase-img">
             <div className="darken">
                 <div className="container">
-                    <div className="container-left">
-                        <h2>Alege un site care ti se potriveste.</h2>
-                    </div>
-                    <div className="container-right">
-
-                    </div>
+                   
+                        <div className="showcase-text">Salut, sunt <span style={{color: '#468cde'}}>Andrei Nedelus</span>. <br />
+                        Front-End Web Developer.</div>
+                    
                 </div>
             </div>
         </div>

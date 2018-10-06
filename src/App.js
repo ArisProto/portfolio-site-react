@@ -7,10 +7,10 @@ import Backdrop from './components/Backdrop/Backdrop';
 import Showcase from './components/Showcase/Showcase';
 import Tehnologies from './components/Tehnologies/Tehnologies';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faReact, faJs,  } from '@fortawesome/free-brands-svg-icons'
+import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faReact, faJs,  } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs );
+library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faLaptopCode );
 
 class App extends Component {
     state = {
@@ -39,9 +39,11 @@ class App extends Component {
 
         return (
             <div style={{height: '100%'}}>
-                <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
+                <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#333' />
                 <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
                 {backdrop}
+                
+                
                 <Showcase />
                 <Tehnologies />
                 <p style={{textAlign: 'center'}}>*</p>
