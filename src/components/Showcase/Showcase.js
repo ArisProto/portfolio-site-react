@@ -2,7 +2,7 @@ import React from 'react';
 import './Showcase.css';
 
 const showcase = props => (
-    <div className="showcase">
+    <section className="showcase">
         <div className="showcase-img">
             <div className="darken">
                 <div className="container">
@@ -13,7 +13,7 @@ const showcase = props => (
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 );
 
 export default showcase;
