@@ -56,6 +56,7 @@
 }
 
 .project-info {
+    opacity: 0;
     box-sizing: border-box;
     text-align: center;
     color: #d6d8de;
@@ -66,12 +67,44 @@
     bottom: 0;
     background: rgba(0, 0, 0, .75);
     width: 100%;
-    height: fit-content;
-    padding: 1rem;
+    min-height: 100%;
     border-radius: 0 0 8px 8px;
 }
 
-.project-buttons button {
+.project-name {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    transform: translateX(-15%);
+    font-size: 1.5rem;
+}
+
+.project-info:hover {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.project-info:hover .project-name {
+    transition: .4s;
+    top: 10%;
+}
+
+.project-buttons {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: -10%;
+}
+
+.project-info:hover .project-buttons {
+    transition: .4s;
+    bottom: 10%;
+}
+
+.project-buttons a {
+    box-sizing: border-box;
+    display: inline-block;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
     width: calc(50% - 20px);
@@ -80,6 +113,7 @@
     font-size: 1.2rem;
     border-radius: 8px;
     margin-top: 10px;
+    padding-top: 2px;
 }
 
 .project-buttons :nth-child(1)  {

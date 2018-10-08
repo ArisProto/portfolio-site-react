@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import './ProjectsShowcase.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 class projectsShowcase extends Component {
     state = {
         projects: [{
             project1: [{ 
-               name: 'Card Game',
+               name: 'Memory Game',
                className: 'project1',
                github: 'github/limk',
                demo: 'ceva'
             }],
             project2: [{
-                name: 'project2',
+                name: 'Neighberhood map React',
                 className: 'project2',
                 github: 'github/limk',
                 demo: 'ceva'
@@ -38,8 +39,8 @@ class projectsShowcase extends Component {
             <div className="project-info">
                 <span className="project-name">{project.name}</span>
                 <div className="project-buttons">
-                    <button><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</button>
-                    <button><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</button>
+                    <Link to={project.github}><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</Link>
+                    <Link to={project.github}><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</Link>
                 </div>
             </div>
         </div>

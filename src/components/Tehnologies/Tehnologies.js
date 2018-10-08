@@ -44,7 +44,7 @@ const tehnologies = props => (
 
                 <FontAwesomeIcon icon={['fab', 'react']} size="2x" color="#00d8ff" title="React.Js" />
 
-                <img height="30px" alt="Photoshop" src={photoshopLogo} title="Photoshop" /> 
+                <img height="30px" width="30px" alt="Photoshop" src={photoshopLogo} title="Photoshop" /> 
             </div>
         </div>
         {/*
