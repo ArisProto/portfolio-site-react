@@ -33,19 +33,20 @@ class projectsShowcase extends Component {
         }]
     };
 
-    createProject = (create) => (
-        create.map( project =>
-        <div key={project.className} className={project.className}>
-            <div className="project-info">
-                <span className="project-name">{project.name}</span>
-                <div className="project-buttons">
-                    <Link to={project.github}><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</Link>
-                    <Link to={project.github}><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</Link>
+    createProject = (create) => {
+        let randomNum = (Math.random() * (0.5 - 0.2) + 0.2).toFixed(2);
+        return create.map( project =>
+            <div key={project.className} className={`slide-to-top ${project.className}`} style={{animationDelay: randomNum + 's'}}>
+                <div className="project-info">
+                    <span className="project-name">{project.name}</span>
+                    <div className="project-buttons">
+                        <Link to={project.github}><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</Link>
+                        <Link to={project.github}><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</Link>
+                    </div>
                 </div>
             </div>
-        </div>
-        )
-    );
+            )
+        };
 
     render() {
         let { project1, project2, project3 ,project4 } = this.state.projects[0];

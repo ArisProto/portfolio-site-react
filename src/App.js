@@ -6,10 +6,12 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Showcase from './components/Showcase/Showcase';
 import Tehnologies from './components/Tehnologies/Tehnologies';
+import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 import { library } from '@fortawesome/fontawesome-svg-core';
+
+
 import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faLaptopCode, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faReact, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
-import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 
 library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faLaptopCode, faGlobe, faGithub );
 
