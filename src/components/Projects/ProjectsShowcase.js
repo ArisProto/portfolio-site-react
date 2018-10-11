@@ -34,9 +34,9 @@ class projectsShowcase extends Component {
     };
 
     createProject = (create) => {
-        let randomNum = (Math.random() * (0.5 - 0.2) + 0.2).toFixed(2);
+        let randomNum = (Math.random() * (0.4 - 0.2) + 0.2).toFixed(2);
         return create.map( project =>
-            <div key={project.className} className={`slide-to-top ${project.className}`} style={{animationDelay: randomNum + 's'}}>
+            <div key={project.className} className={project.className} style={{animationDelay: randomNum + 's'}}>
                 <div className="project-info">
                     <span className="project-name">{project.name}</span>
                     <div className="project-buttons">
@@ -49,7 +49,15 @@ class projectsShowcase extends Component {
         };
 
     render() {
-        let { project1, project2, project3 ,project4 } = this.state.projects[0];
+        let { project1, project2, project3, project4 } = this.state.projects[0];
+
+        // Add 'slide-to-top' animation to the first 4 projects on the home page
+        if (this.props.scroll > 180) {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementsByClassName( 'project' + i )[0].classList.add('slide-to-top');
+            }
+        };
+
         return (
             <section className="projects">
                 <h2 className="projects-title">Projects</h2>

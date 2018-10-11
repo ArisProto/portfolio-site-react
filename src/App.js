@@ -17,7 +17,20 @@ library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt
 
 class App extends Component {
     state = {
-        sideDrawerOpen: false
+        sideDrawerOpen: false,
+        scroll: 0
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    };
+    
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    };
+
+    handleScroll = () => {
+            this.setState({scroll: window.scrollY});
     };
 
     sideDrawerClickHandler = () => {
@@ -46,9 +59,8 @@ class App extends Component {
                 <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
                 {backdrop}
                 
-                
                 <Showcase />
-                <ProjectsShowcase />
+                <ProjectsShowcase scroll={this.state.scroll} />
                 <Tehnologies />
                 <p style={{textAlign: 'center'}}>*</p>
                 <p style={{textAlign: 'center'}}>*</p>
