@@ -22,7 +22,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 50vw 35px 50vw;
-    border-color: transparent transparent #fff transparent;
+    border-color: transparent transparent #202020 transparent;
 }
 
 .tehnologies-container-top {
@@ -112,5 +112,11 @@
         flex-direction: column;
         align-items: center;
         background: url('.././Toolbar/img/logo-black.svg') no-repeat right/contain;
+    }
+}
+
+@media (max-width: 350px) {
+    .tehnologies-container-bot h3 {
+    text-align: center;
     }
 }

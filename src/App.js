@@ -8,12 +8,12 @@ import Showcase from './components/Showcase/Showcase';
 import Tehnologies from './components/Tehnologies/Tehnologies';
 import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 import { library } from '@fortawesome/fontawesome-svg-core';
-
+import Footer from './components/Footer/Footer';
 
 import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faLaptopCode, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faReact, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faReact, faJs, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faLaptopCode, faGlobe, faGithub );
+library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faLaptopCode, faGlobe, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram );
 
 class App extends Component {
     state = {
@@ -55,19 +55,17 @@ class App extends Component {
 
         return (
             <div style={{height: '100%'}}>
-                <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#333' />
+                <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
                 <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
                 {backdrop}
                 
                 <Showcase />
                 <ProjectsShowcase scroll={this.state.scroll} />
                 <Tehnologies />
-                <p style={{textAlign: 'center'}}>*</p>
-                <p style={{textAlign: 'center'}}>*</p>
 
                 {/* Home Page */}
                 <Route exact path="/" render={() => (
-                    <p style={{textAlign: 'center'}}>home page</p>
+                <Footer />
 
                 )}></Route>
 

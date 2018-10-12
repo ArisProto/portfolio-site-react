@@ -29,7 +29,7 @@ class projectsShowcase extends Component {
                 className: 'project4',
                 github: 'github/limk',
                 demo: 'ceva'
-            }],
+            }]
         }]
     };
 
@@ -52,6 +52,7 @@ class projectsShowcase extends Component {
         let { project1, project2, project3, project4 } = this.state.projects[0];
 
         // Add 'slide-to-top' animation to the first 4 projects on the home page
+        // object length -> Object.keys(this.state.projects[0]).length
         if (this.props.scroll > 180) {
             for (let i = 1; i <= 4; i++) {
                 document.getElementsByClassName( 'project' + i )[0].classList.add('slide-to-top');

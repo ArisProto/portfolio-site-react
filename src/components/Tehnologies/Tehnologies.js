@@ -47,20 +47,6 @@ const tehnologies = props => (
                 <img height="30px" width="30px" alt="Photoshop" src={photoshopLogo} title="Photoshop" /> 
             </div>
         </div>
-        {/*
-        <h2>Services and Tehnologies</h2>
-        <p style={{textAlign: 'center'}}>
-
-    
-            web development / Responsive Design / Website Maintenance
-            sdsdfd
-            </p>
-        Description:
-            Responsive Design
-            1-10 Pagini incluse 
-            Suport tehnic asigurat 1 an
-            Optimizare SEO
-        */}
     </section>
 );
 
