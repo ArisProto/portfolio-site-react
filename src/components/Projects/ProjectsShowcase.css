@@ -73,6 +73,7 @@
 }
 
 .project-name {
+    visibility: hidden;
     position: absolute;
     top: -10%;
     left: 15%;
@@ -86,11 +87,14 @@
 }
 
 .project-info:hover .project-name {
+    visibility: visible;
+    z-index: 50;
     transition: .4s;
     top: 10%;
 }
 
 .project-buttons {
+    visibility: hidden;
     position: absolute;
     width: 100%;
     box-sizing: border-box;
@@ -98,6 +102,7 @@
 }
 
 .project-info:hover .project-buttons {
+    visibility: visible;
     transition: .4s;
     bottom: 10%;
 }

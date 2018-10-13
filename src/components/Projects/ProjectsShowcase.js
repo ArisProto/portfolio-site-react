@@ -34,7 +34,7 @@ class projectsShowcase extends Component {
     };
 
     createProject = (create) => {
-        let randomNum = (Math.random() * (0.4 - 0.2) + 0.2).toFixed(2);
+        let randomNum = (Math.random() * (0.2 - 0.1) + 0.1).toFixed(2);
         return create.map( project =>
             <div key={project.className} className={project.className} style={{animationDelay: randomNum + 's'}}>
                 <div className="project-info">
@@ -44,8 +44,7 @@ class projectsShowcase extends Component {
                         <Link to={project.github}><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</Link>
                     </div>
                 </div>
-            </div>
-            )
+            </div>);
         };
 
     render() {

@@ -27,7 +27,7 @@
     color: #d6d8de;
 }
 .copyright a:hover {
-    color: #e8e8e8;
+    color: #458cde;
 }
 
 .social {
@@ -43,7 +43,7 @@
 
 .social a:hover {
     color: #468cde;
-    transition: .3s;
+    transition: .2s;
 }
 
 @media (max-width: 1400px) {

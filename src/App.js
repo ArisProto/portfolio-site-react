@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Route } from 'react-router-dom';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
@@ -9,11 +8,12 @@ import Tehnologies from './components/Tehnologies/Tehnologies';
 import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import Footer from './components/Footer/Footer';
+import About from './components/About/About';
 
-import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faLaptopCode, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faGlobe, faMedal } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faReact, faJs, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faLaptopCode, faGlobe, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram );
+library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faGlobe, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram, faMedal );
 
 class App extends Component {
     state = {
@@ -21,7 +21,7 @@ class App extends Component {
         scroll: 0
     };
 
-    componentDidMount() {
+    componentWillMount() {
         window.addEventListener('scroll', this.handleScroll);
     };
     
@@ -30,7 +30,7 @@ class App extends Component {
     };
 
     handleScroll = () => {
-            this.setState({scroll: window.scrollY});
+        this.setState({scroll: window.scrollY});
     };
 
     sideDrawerClickHandler = () => {
@@ -55,18 +55,20 @@ class App extends Component {
 
         return (
             <div style={{height: '100%'}}>
-                <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
+
                 <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
                 {backdrop}
                 
-                <Showcase />
-                <ProjectsShowcase scroll={this.state.scroll} />
-                <Tehnologies />
 
                 {/* Home Page */}
                 <Route exact path="/" render={() => (
-                <Footer />
-
+                    <React.Fragment>
+                        <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
+                        <Showcase />
+                        <ProjectsShowcase scroll={this.state.scroll} />
+                        <Tehnologies />
+                        <Footer />
+                    </React.Fragment>
                 )}></Route>
 
                 {/* Portfolio Page */}
@@ -77,7 +79,11 @@ class App extends Component {
 
                 {/* About Page */}
                 <Route path="/despre" render={() => (
-                    <p style={{textAlign: 'center'}}>about page</p>
+                    <React.Fragment>
+                        <Toolbar drawerClickHandler={this.sideDrawerClickHandler} />
+                        <About />
+                        <Footer />
+                    </React.Fragment>
 
                 )}></Route>
 

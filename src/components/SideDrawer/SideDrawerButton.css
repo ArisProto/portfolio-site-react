@@ -10,6 +10,7 @@
     padding: 0;
     margin-left: .8rem;
     box-sizing: border-box;
+    position: relative;
 }
 
 .menu-button:focus {
@@ -19,7 +20,7 @@
 .button-line {
     width: 28px;
     height: 3px;
-    background: #000;
+    background: #fff;
 }
 
 @media (min-width: 900px) {

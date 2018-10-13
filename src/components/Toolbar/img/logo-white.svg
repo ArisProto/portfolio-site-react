@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 8421 2083" style="enable-background:new 0 0 8421 2083;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'JosefinSans-Bold';}
+	.st2{font-size:980px;}
+	.st3{letter-spacing:-19;}
+	.st4{letter-spacing:-29;}
+	.st5{letter-spacing:-9;}
+</style>
+<title>misshu</title>
+<g id="Ebene_2">
+	<text transform="matrix(1 0 0 1 2192.5901 1316.45)" class="st0 st1 st2 st3">A</text>
+	<text transform="matrix(1 0 0 1 2805.0801 1316.45)" class="st0 st1 st2 st4">n</text>
+	<text transform="matrix(1 0 0 1 3277.6201 1316.45)" class="st0 st1 st2 st4">d</text>
+	<text transform="matrix(1 0 0 1 3775.0601 1316.45)" class="st0 st1 st2 st4">r</text>
+	<text transform="matrix(1 0 0 1 4048.8601 1316.45)" class="st0 st1 st2 st4">e</text>
+	<text transform="matrix(1 0 0 1 4471.4302 1316.45)" class="st0 st1 st2 st5">i </text>
+	<text transform="matrix(1 0 0 1 4878.1104 1316.45)" class="st0 st1 st2 st4">N</text>
+	<text transform="matrix(1 0 0 1 5646.7197 1316.45)" class="st0 st1 st2 st3">e</text>
+	<text transform="matrix(1 0 0 1 6081.3501 1316.45)" class="st0 st1 st2 st4">d</text>
+	<text transform="matrix(1 0 0 1 6582.21 1316.45)" class="st0 st1 st2 st4">e</text>
+	<text transform="matrix(1 0 0 1 7005.1797 1316.45)" class="st0 st1 st2 st4">l</text>
+	<text transform="matrix(1 0 0 1 7178.3301 1316.45)" class="st0 st1 st2 st4">u</text>
+	<text transform="matrix(1 0 0 1 7646.1699 1316.45)" class="st0 st1 st2 st5">s</text>
+</g>
+<g id="logo">
+	<path id="outer_left" class="st0" d="M807.8,107.3L807.8,107.3c44.8,18.1,66.5,69.2,48.4,114L168.8,1922.9
+		c-18.1,44.8-69.2,66.5-114,48.4h0c-44.8-18.1-66.5-69.2-48.4-114L693.8,155.7C711.9,110.9,763,89.2,807.8,107.3z"/>
+	<path id="outer_right" class="st0" d="M743.2,107.4L743.2,107.4c44.8-18.1,95.9,3.5,114,48.4l687.8,1702.5
+		c18.1,44.8-3.5,95.9-48.4,114l0,0c-44.8,18.1-95.9-3.5-114-48.4L694.8,221.4C676.7,176.5,698.4,125.5,743.2,107.4z"/>
+	<path id="n_horizontal" class="st0" d="M431.3,1740.7v87.6h693.9v-87.6c0-48.2-39.1-87.6-86.9-87.6h-520
+		C470.4,1653.1,431.3,1692.6,431.3,1740.7z"/>
+	<path id="n_right" class="st0" d="M1022.5,1667.5l-12.5,5c-44.8,18.1-66.5,69.2-48.4,114l55.9,138.2c18.1,44.8,69.2,66.5,114,48.4
+		l0,0c44.7-18.2,66.3-69.2,48.4-114l-60.9-150.7C1103.6,1670.5,1060.4,1652.2,1022.5,1667.5z"/>
+	<path id="n_left" class="st0" d="M545.9,1672.6l-12.5-5c-37.9-15.2-81,3.1-96.5,40.9L376.6,1858c-18,44.8,3.7,95.8,48.4,114l0,0
+		c44.8,18,95.8-3.7,114-48.4l55.3-137C612.3,1741.8,590.7,1690.8,545.9,1672.6z"/>
+	<path id="outer_left-2" class="st0" d="M578.2,1402.9L578.2,1402.9c0-46.7,37.9-84.5,84.6-84.5h231.1c46.7,0,84.6,37.9,84.6,84.5v0
+		c0,46.7-37.9,84.5-84.6,84.5H662.7C616,1487.4,578.2,1449.6,578.2,1402.9z"/>
+	<path id="outer_left-3" class="st0" d="M750.4,1036.8L750.4,1036.8c43.3-17.5,92.6,3.4,110.1,46.7l114.4,283.1
+		c17.5,43.3-3.4,92.6-46.7,110.1h0c-43.3,17.5-92.6-3.4-110.1-46.7l-114.4-283.1C686.2,1103.6,707.2,1054.3,750.4,1036.8z"/>
+	<g id="vertical_line">
+		<path class="st0" d="M1882.7,0L1882.7,0c27.6,0,50,22.4,50,50v1983c0,27.6-22.4,50-50,50l0,0c-27.6,0-50-22.4-50-50V50
+			C1832.7,22.4,1855.1,0,1882.7,0z"/>
+	</g>
+</g>
+</svg>
