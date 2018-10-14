@@ -1,0 +1,12 @@
+@import '../components/About/About.css';
+@import '../components/About/AboutShort.css';
+@import '../components/Backdrop/Backdrop.css';
+@import '../components/Footer/Footer.css';
+@import '../components/Projects/Projects.css';
+@import '../components/Projects/ProjectsShowcase.css';
+@import '../components/Showcase/Showcase.css';
+@import '../components/SideDrawer/SideDrawer.css';
+@import '../components/SideDrawer/SideDrawerButton.css';
+@import '../components/Tehnologies/Tehnologies.css';
+@import '../components/Toolbar/Toolbar.css';
+@import '../index.css';

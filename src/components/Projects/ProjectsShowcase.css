@@ -32,17 +32,17 @@
 }
 
 .project1 {
-    background: url('./img/memory-game.png') center center/cover;
+    background: url('./img/neighborhood-map.png') center center/cover;
 }
 
 .project2 {
-    background: url('./img/project1.jpg') center center/cover;
+    background: url('./img/restaurant-reviews.png') center center/cover;
 }
 .project3 {
-    background: url('./img/project1.jpg') center center/cover;
+    background: url('./img/arcade-game.png') center center/cover;
 }
 .project4 {
-    background: url('./img/project1.jpg') center center/cover;
+    background: url('./img/memory-game.png') center center/cover;
 }
 
 .project1, .project2, .project3, .project4 {

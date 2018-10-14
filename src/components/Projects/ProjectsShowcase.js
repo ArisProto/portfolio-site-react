@@ -1,34 +1,33 @@
 import React, { Component } from 'react';
 import './ProjectsShowcase.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 
 class projectsShowcase extends Component {
     state = {
         projects: [{
             project1: [{ 
-               name: 'Memory Game',
+               name: 'Neighborhood Map',
                className: 'project1',
-               github: 'github/limk',
-               demo: 'ceva'
+               github: 'https://github.com/misshu1/neighborhood-map-react',
+               demo: 'https://andreinedelus.ro/neighborhood-map-react'
             }],
             project2: [{
-                name: 'Neighberhood map React',
+                name: 'Restaurant Reviews',
                 className: 'project2',
-                github: 'github/limk',
-                demo: 'ceva'
+                github: 'https://github.com/misshu1/Restaurant-reviews-app',
+                demo: 'https://andreinedelus.ro/restaurant-review'
             }],
             project3: [{
-                name: 'project3',
+                name: 'Classic Arcade Game',
                 className: 'project3',
-                github: 'github/limk',
-                demo: 'ceva'
+                github: 'https://github.com/misshu1/arcade-game',
+                demo: 'https://andreinedelus.ro/arcade-game'
             }],
             project4: [{
-                name: 'project4',
+                name: 'Memory Game',
                 className: 'project4',
-                github: 'github/limk',
-                demo: 'ceva'
+                github: 'https://github.com/misshu1/card-game',
+                demo: 'https://andreinedelus.ro/cardgame'
             }]
         }]
     };
@@ -40,8 +39,8 @@ class projectsShowcase extends Component {
                 <div className="project-info">
                     <span className="project-name">{project.name}</span>
                     <div className="project-buttons">
-                        <Link to={project.github}><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</Link>
-                        <Link to={project.github}><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</Link>
+                        <a href={project.demo} target="_blank" rel="external noopener noreferrer" ><FontAwesomeIcon icon="globe" size="sm" color="#000" className="button-icon"/>Demo</a>
+                        <a href={project.github} target="_blank" rel="external noopener noreferrer" ><FontAwesomeIcon icon={['fab', 'github']} size="sm" color="#000" style={{background: '#e57354'}} />Code</a>
                     </div>
                 </div>
             </div>);
@@ -51,7 +50,6 @@ class projectsShowcase extends Component {
         let { project1, project2, project3, project4 } = this.state.projects[0];
 
         // Add 'slide-to-top' animation to the first 4 projects on the home page
-        // object length -> Object.keys(this.state.projects[0]).length
         if (this.props.scroll > 180) {
             for (let i = 1; i <= 4; i++) {
                 document.getElementsByClassName( 'project' + i )[0].classList.add('slide-to-top');
