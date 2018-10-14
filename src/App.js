@@ -58,7 +58,7 @@ class App extends Component {
 
                 <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
                 {backdrop}
-                
+                {this.state.scroll > 250 ? <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='rgba(0, 0, 0, .5)' position='fixed' index='150' class='slide-to-bottom' /> : null}
 
                 {/* Home Page */}
                 <Route exact path="/" render={() => (

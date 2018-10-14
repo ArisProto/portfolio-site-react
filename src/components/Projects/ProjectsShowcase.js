@@ -49,12 +49,16 @@ class projectsShowcase extends Component {
     render() {
         let { project1, project2, project3, project4 } = this.state.projects[0];
 
-        // Add 'slide-to-top' animation to the first 4 projects on the home page
-        if (this.props.scroll > 180) {
-            for (let i = 1; i <= 4; i++) {
-                document.getElementsByClassName( 'project' + i )[0].classList.add('slide-to-top');
-            }
-        };
+        // Navbar menu was reading this loop before the page load and return undefined, fixed with setTimeout
+        setTimeout(() => {
+            // Add 'slide-to-top' animation to the first 4 projects on the home page
+            if (this.props.scroll > 180) {
+                for (let i = 1; i <= 4; i++) {
+                    document.getElementsByClassName( 'project' + i )[0].classList.add('slide-to-top');
+                }
+            };
+        }, 10);
+
 
         return (
             <section className="projects">

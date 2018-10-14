@@ -26,7 +26,6 @@
 .side-drawer-menu li {
     box-sizing: border-box;
     display: block;
-    background: green;
     width: 100%;
     line-height: normal;
     font-weight: 600;
@@ -35,7 +34,7 @@
 }
 
 .side-drawer-menu a {
-    color: #00b140;
+    color: #468cde;
     text-decoration: none;
 }
 

@@ -6,11 +6,14 @@ import smallLogo from './img/small-logo.svg';
 import '../SideDrawer/SideDrawerButton';
 import SideDrawerButton from '../SideDrawer/SideDrawerButton';
 
-const toolbar = props => (
-    <header className="toolbar" style={{background: props.bgColor ? props.bgColor : null}}>
+const toolbar = props => {
+
+    const { bgColor, position, index, drawerClickHandler } = props;
+
+    return <header className="toolbar" style={{background: bgColor ? bgColor : null, position: position ? position : null, zIndex: index ? index : null}}>
         <nav className="toolbar-nav">
             <div>
-                <SideDrawerButton click={props.drawerClickHandler}/>
+                <SideDrawerButton click={drawerClickHandler}/>
             </div>
             <div className="toolbar-logo"><Link to="/"><img alt="Andrei Nedelus" src={logo} /></Link></div>
             <div className="toolbar-small-logo"><Link to="/"><img alt="Andrei Nedelus" src={smallLogo} /></Link></div>
@@ -24,6 +27,6 @@ const toolbar = props => (
             </div>
         </nav>
     </header>
-);
+};
 
 export default toolbar;
