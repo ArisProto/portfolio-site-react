@@ -22,7 +22,26 @@ body {
     transition: 0.3s ease-out;
 }
 
+.slide-to-bottom {
+    animation-name: show-down;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    will-change: transform;
+}
 
+@keyframes show-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @media (min-width: 900px) {
     .slide-to-right {
@@ -58,7 +77,7 @@ body {
     @keyframes show-up {
         0% {
             opacity: 0;
-            transform: translateY(300px);
+            transform: translateY(100%);
         }
         100% {
             opacity: 1;

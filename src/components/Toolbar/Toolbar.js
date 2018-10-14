@@ -8,9 +8,17 @@ import SideDrawerButton from '../SideDrawer/SideDrawerButton';
 
 const toolbar = props => {
 
-    const { bgColor, position, index, drawerClickHandler } = props;
+    const { classN, scroll, bgColor, position, index, opacity, drawerClickHandler } = props;
 
-    return <header className="toolbar" style={{background: bgColor ? bgColor : null, position: position ? position : null, zIndex: index ? index : null}}>
+    if(scroll > 0 && classN !== null) {
+        document.getElementsByClassName('toolbar')[0].classList.add(classN);
+    };
+
+    return <header className="toolbar" 
+    style={{background: bgColor ? bgColor : null,
+     position: position ? position : null, 
+     zIndex: index ? index : null, 
+     opacity: opacity ? opacity : null }}>
         <nav className="toolbar-nav">
             <div>
                 <SideDrawerButton click={drawerClickHandler}/>

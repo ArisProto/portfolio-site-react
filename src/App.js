@@ -44,9 +44,10 @@ class App extends Component {
     };
 
     render() {
+        let { sideDrawerOpen, scroll} = this.state;
         let backdrop;
 
-        if(this.state.sideDrawerOpen) {
+        if(sideDrawerOpen) {
             backdrop = <Backdrop click={this.backdropClickHandler}/>
             document.querySelector('body').className = 'slide-open';
         } else {
@@ -55,17 +56,22 @@ class App extends Component {
 
         return (
             <div style={{height: '100%'}}>
-
-                <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>  
-                {backdrop}
-                {this.state.scroll > 250 ? <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='rgba(0, 0, 0, .5)' position='fixed' index='150' class='slide-to-bottom' /> : null}
+            
+                {/* Global Components */}
+                <Route path="/" render={() => (
+                    <React.Fragment>
+                        <SideDrawer show={sideDrawerOpen} click={this.backdropClickHandler}/>  
+                        {backdrop}
+                        {scroll > 250 ? <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='rgba(0, 0, 0, .5)' position='fixed' index='150' scroll={scroll} classN='slide-to-bottom' opacity='0' /> : null}
+                    </React.Fragment>
+                )}></Route>
 
                 {/* Home Page */}
                 <Route exact path="/" render={() => (
                     <React.Fragment>
                         <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
                         <Showcase />
-                        <ProjectsShowcase scroll={this.state.scroll} />
+                        <ProjectsShowcase scroll={scroll} />
                         <Tehnologies />
                         <Footer />
                     </React.Fragment>
