@@ -28,3 +28,9 @@
         display: none;
     }
 }
+
+@-moz-document url-prefix() {
+    .button-line {
+        margin: 3px 0 3px 0;
+    }
+}

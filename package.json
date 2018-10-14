@@ -2,6 +2,15 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "> 1%",
+    "ie > 9"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-brands-svg-icons": "^5.3.1",

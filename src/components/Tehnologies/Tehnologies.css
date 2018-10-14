@@ -111,7 +111,7 @@
     .tehnologies-container-top {
         flex-direction: column;
         align-items: center;
-        background: url('.././Toolbar/img/logo-black.svg') no-repeat right/contain;
+        background: url('.././Toolbar/img/logo-black.svg') no-repeat center/contain;
     }
 }
 

@@ -46,3 +46,11 @@ body {
         }
     }
 }
+
+@media (max-width: 500px) {
+    .slide-open {
+        width: calc(100% + 70%);
+        min-width: 260px;
+        margin-left: calc(100% - 30%);
+    }
+}
