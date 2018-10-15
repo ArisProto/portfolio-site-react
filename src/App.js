@@ -60,16 +60,29 @@ class App extends Component {
                 {/* Global Components */}
                 <Route path="/" render={() => (
                     <React.Fragment>
-                        <SideDrawer show={sideDrawerOpen} click={this.backdropClickHandler}/>  
+                        <SideDrawer 
+                        show={sideDrawerOpen} 
+                        click={this.backdropClickHandler} />  
                         {backdrop}
-                        {scroll > 250 ? <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='rgba(0, 0, 0, .5)' position='fixed' index='150' scroll={scroll} classN='slide-to-bottom' opacity='0' /> : null}
+                        {scroll > 250 ? 
+                            <Toolbar 
+                            drawerClickHandler={this.sideDrawerClickHandler}
+                            bgColor='rgba(0, 0, 0, .5)' 
+                            position='fixed' 
+                            index='150' 
+                            scroll={scroll} 
+                            classN='slide-to-bottom' 
+                            opacity='0' /> 
+                        : null}
                     </React.Fragment>
                 )}></Route>
 
                 {/* Home Page */}
                 <Route exact path="/" render={() => (
                     <React.Fragment>
-                        <Toolbar drawerClickHandler={this.sideDrawerClickHandler} bgColor='#000' />
+                        <Toolbar 
+                        drawerClickHandler={this.sideDrawerClickHandler} 
+                        bgColor='#000' />
                         <Showcase />
                         <ProjectsShowcase scroll={scroll} />
                         <Tehnologies />

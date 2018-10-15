@@ -28,7 +28,7 @@ const tehnologies = props => (
             <div className="container-box">
                 <div className="flex-vh-center"><FontAwesomeIcon className
                 ="circle" icon="wrench" size="lg" color="#333" /><h3 className="blue-color">Suport Tehnic</h3></div>
-                <p>Suport tehnic asigurat dupa finalizarea proiectului.</p>                
+                <p>Suport tehnic asigurat 1 an dupa finalizarea proiectului.</p>                
             </div>
 
         </div>

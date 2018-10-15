@@ -10,11 +10,14 @@ const toolbar = props => {
 
     const { classN, scroll, bgColor, position, index, opacity, drawerClickHandler } = props;
 
-    if(scroll > 0 && classN !== null) {
-        document.getElementsByClassName('toolbar')[0].classList.add(classN);
+    if(scroll > 250 && classN !== null) {
+        if(document.getElementsByClassName('toolbar').length > 1) {
+            document.getElementsByClassName('toolbar')[0].classList.add(classN);
+        }
     };
 
-    return <header className="toolbar" 
+    return <header 
+    className="toolbar" 
     style={{background: bgColor ? bgColor : null,
      position: position ? position : null, 
      zIndex: index ? index : null, 
