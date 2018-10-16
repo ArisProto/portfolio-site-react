@@ -30,6 +30,7 @@
 .toolbar-small-logo img {
     display: inline-block;
     width: 30px;
+    height: 36px;
     /* Add negative margin based on SideDrawerButton width and left margin, to center the logo */
     margin-left: calc(-28px - .8rem);
 }

@@ -1,0 +1,132 @@
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    background: #000 url('./img/bg.jpg') no-repeat;
+    background-size: contain;
+    background-position: top center;
+    color: #d6d8de;
+}
+
+.contact-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 100%;
+    margin: -80px auto 0 auto;
+    padding-top: 80px;
+}
+
+.contact-container-right {
+    display: flex;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    padding: 3rem;
+}
+
+.contact-container-left {
+    width: 60%;
+}
+
+.contact-container-info {
+    display: flex;
+    box-sizing: border-box;
+    padding: 7rem 5rem;
+    height: 100%;
+}
+
+.contact-text-info p {
+    line-height: 2;
+}
+
+.contact-box {
+    align-self: flex-end;
+}
+
+.contact-icons {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.contact-icons a {
+    color: #d6d8de;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    color: #ef3271;
+    transition: .2s;
+}
+
+.contact-container-right form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-container-right form input, .contact-container-right form textarea {
+    color: #d6d8de;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #696c70;
+    margin: 2rem 0 0 0;
+    padding: 1rem .5rem;
+}
+
+.contact-container-right form input::placeholder, .contact-container-right form textarea::placeholder {
+    color: #d6d8de;
+    padding-left: 2px;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.contact-form-box {
+    width: 100%;
+    align-self: center;
+}
+
+.contact-button {
+    background: red;
+    border: none;
+    padding: .8rem;
+    width: 70%;
+    border-radius: 5px;
+    color: #fff;
+    margin: 2rem auto;
+}
+
+@media (max-width: 1200px) {
+    .contact-container {
+        min-height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-page {
+        height: 100%;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container-left {
+        width: 100%;
+    }
+    .contact-container-right {
+        width: 100%;
+    }
+    .contact-container-info {
+        padding: 2rem;
+    }
+    .contact-container-right {
+        padding: 2rem;
+    }
+    .contact-container-right form input, .contact-container-right form textarea {
+        margin: 1rem 0 0 0;
+    }
+}

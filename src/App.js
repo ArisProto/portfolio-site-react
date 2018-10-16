@@ -9,11 +9,12 @@ import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
-import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faGlobe, faMedal } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faBookReader, faPaintBrush, faGlobe, faMedal, faAt, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faReact, faJs, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faGlobe, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram, faMedal );
+library.add( faTimes, faHome, faAddressCard, faEnvelope, faFolderOpen, faFileAlt, faWrench, faCode, faHtml5, faCss3Alt, faReact, faJs, faBookReader, faPaintBrush, faGlobe, faGithub, faLinkedin, faFacebookSquare, faGithubSquare, faInstagram, faMedal, faAt, faPhone, faMapMarkerAlt );
 
 class App extends Component {
     state = {
@@ -108,8 +109,11 @@ class App extends Component {
 
                 {/* Contact Page */}
                 <Route path="/contact" render={() => (
-                    <p style={{textAlign: 'center'}}>contact page</p>
-
+                    <React.Fragment>
+                        <Toolbar drawerClickHandler={this.sideDrawerClickHandler} 
+                        bgColor="rgba(0, 0, 0, .3)" />
+                        <Contact />
+                    </React.Fragment>
                 )}></Route>
             </div>
         );

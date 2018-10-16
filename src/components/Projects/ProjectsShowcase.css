@@ -135,8 +135,6 @@
 @media (max-width: 1100px) {
     .project1, .project2, .project3, .project4 {
         width: 40%;
-        padding-bottom: calc(40% * 9 / 16);
-
     }
 }
 

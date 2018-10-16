@@ -48,7 +48,7 @@ class about extends Component {
         let { achievement1, achievement2 , achievement3 } = this.state.achievements[0];
 
         return (
-                <section className="contact-page">
+                <section className="about-page">
                 <div className="about-text slide-to-right">
                 <h2><FontAwesomeIcon icon="address-card" size="sm" /> Ceva aici</h2>
                 <p>Prima interactiune cu programarea a inceput in 2009, cand am creat primul meu website, pe atunci nu eram foarte atras de programare si nu mi-am dat seama ca pot sa traiesc din asta.
