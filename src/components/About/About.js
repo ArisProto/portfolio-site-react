@@ -50,25 +50,12 @@ class about extends Component {
         return (
                 <section className="about-page">
                 <div className="about-text slide-to-right">
-                <h2><FontAwesomeIcon icon="address-card" size="sm" /> Ceva aici</h2>
-                <p>Prima interactiune cu programarea a inceput in 2009, cand am creat primul meu website, pe atunci nu eram foarte atras de programare si nu mi-am dat seama ca pot sa traiesc din asta.
-                    Recent am vazut un anunt despre un scholarship pentru a invata Web Development.
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    My first interaction with code was in 2009 when I created my first website, back then I was not thinking that I can do my living from it.
-
-                Recently I saw an ad on Facebook about a scholarship program to learn web development. I read some information about that and I registered for the scholarship. One month passed and they announced the people selected for this program -- 60,000 out of the 200,000 registered.
-
-                The funny part of this is that I received an email telling me that I was not selected for this program, and I felt so bad in that day. But the very next day they send me a second email telling me that the first email was a mistake and I was selected.
-
-                The scholarship start date came and, after a few weeks I’ve learned so much and was so motivated to learn more about programing, that I completed the 3 month scholarship program in only 1 month. The course was so well put together and the community always there to help when I got stuck in some quizzes.
-
-                When the scholarship was over, the next step was to announce the recipients of a 6 months nanodegree program. That day was the longest day of my life. The email came telling me that I was one of the 10% of 60,000 people who moved on to phase 2 of the scholarship -- 6 months of learning Front-End Web Development. It was the best thing that happened to me, and for this I want to thank Udacity for showing me a path to follow, that I had not seen before, and did not know existed.</p></div>
+                <h2><FontAwesomeIcon icon="address-card" size="sm" /> Despre mine</h2>
+                <p>Prima interactiune cu programarea a inceput in 2009, cand am creat primul meu website, pe atunci nu eram foarte atras de programare. Recent am vazut un anunt pe internet legat de un curs creat de Udacity si Google, pentru a invata web development. La care s-au inscris 200.000 persoane.</p>
+                <br />
+                <p>Prima etapa a cursului a durat 3 luni de zile, unde am invatat HTML, CSS, JavaScript si jQuery. Aici doar 60.000 perosane au fost selectate, urmand ca 6.000 sa ajunga in etapa a doua. Cand prima etapa a luat sfarsit, urmatorul pas a fost sa anunte cine merge in etapa urmatoare, ziuea acea a fost cea mai lunga zi din viata mea.</p>
+                <br />
+                <p>Am primit un email mentionand ca sunt printre cei 10% din 60.000 persoane care ajung in etapa a doua, 6 luni pentru a invata Front-End Web Development. A fost cel mai frumos lucru care mi s-a intamplat, si pentru asta vreau sa le multumesc celor de la Udacity pentru ca mi-au aratat calea de urmat, care nu o vazusem inainte, si nu stiam ca exista.</p></div>
                     <div className="achievements-container slide-to-left">
                         <h2><FontAwesomeIcon icon="medal" size="sm" className="fa-flip-vertical" /> Realizari</h2>
                         <div className="achievements">
