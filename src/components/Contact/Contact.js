@@ -24,7 +24,7 @@ class contact extends Component {
                                     <p>Daca ai intrebari nu ezita sa ma contactezi.</p>
                                     <p>Raspund in maxim 24 ore pe email.</p>
                                     <p><FontAwesomeIcon icon="at" color="#d6d8de" className="fa-sm" style={{paddingRight: '.5rem'}} /> nedelusandrei@gmail.com</p>
-                                    <p><FontAwesomeIcon icon="phone" color="#d6d8de" className="fa-sm" style={{paddingRight: '.5rem'}} /> <span id="phone-number" onClick={this.revealPhone}>+40 252 xxx xxx</span></p>
+                                    <p><FontAwesomeIcon icon="phone" color="#d6d8de" className="fa-sm" style={{paddingRight: '.5rem'}} /> <span id="phone-number" onClick={this.revealPhone}>+40 740 xxx xxx</span></p>
                                     <p><FontAwesomeIcon icon="map-marker-alt" color="#d6d8de" className="fa-sm" style={{paddingRight: '.5rem'}} /> Ramnicu Valcea, RO</p>
                                 </div>
 

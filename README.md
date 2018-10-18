@@ -11,9 +11,9 @@ Single page responsive portfolio website built with create-react-app, feel free 
 
 ## How to use
 
-Install [node.js] on your computer.
-Clone or download the project.
-Change the working directory
+- Install [node.js] on your computer.
+- Clone or download the project.
+- Change the working directory
 
 
 ```sh
