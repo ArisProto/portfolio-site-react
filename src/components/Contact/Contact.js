@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class contact extends Component {
 
     revealPhone = () => {
-        document.getElementById('phone-number').innerText = '+40 213 012 321'
+        document.getElementById('phone-number').innerText = '+40 740 766 761'
     };
 
     render() {

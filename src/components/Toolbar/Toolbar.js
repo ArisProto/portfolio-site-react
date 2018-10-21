@@ -31,7 +31,6 @@ const toolbar = props => {
             <div className="toolbar-links">
                 <ul>
                     <li><Link to="/">Acasa</Link></li>
-                    <li><Link to="/portofoliu">Portofoliu</Link></li>
                     <li><Link to="/despre">Despre</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>

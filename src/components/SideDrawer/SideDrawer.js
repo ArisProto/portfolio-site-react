@@ -21,7 +21,6 @@ const sideDrawer = props => {
             <nav className="side-drawer-menu">
                 <ul onClick={props.click}>
                     <Link to="/"><li><FontAwesomeIcon icon="home" color="#fff" /> Acasa</li></Link>
-                    <Link to="/portofoliu"><li><FontAwesomeIcon icon="folder-open" color="#fff" /> Portofoliu</li></Link>
                     <Link to="/despre"><li><FontAwesomeIcon icon="address-card" color="#fff" /> Despre</li></Link>
                     <Link to="/contact"><li><FontAwesomeIcon icon="envelope" color="#fff" /> Contact</li></Link>
                 </ul>

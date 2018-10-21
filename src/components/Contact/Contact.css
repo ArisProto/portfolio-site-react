@@ -96,7 +96,7 @@
 
 .contact-button {
     cursor: pointer;
-    background: red;
+    background: #ea3535;
     border: none;
     padding: .8rem;
     width: 70%;
@@ -116,6 +116,8 @@
 @media (max-width: 800px) {
     .contact-page {
         height: 100%;
+        background: #000 url('./img/bg-mobile.jpg') no-repeat;
+        background-position: top center;
     }
     .contact-container {
         flex-direction: column;
